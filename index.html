@@ -103,24 +103,24 @@
     <a href="/" class="back-link" id="backLink">← Назад к заданиям</a>
     
     <div class="container">
-        <h1>📚 Мои задания</h1>
+        <h1>Мои задания</h1>
         <p class="subtitle">Веб-разработка • 4-й курс</p>
         
         <div class="grid">
             <a href="https://artyomstolyarenko.github.io/Task-1/" class="card" target="_blank" onclick="showBackLink()">
-                <h3>📄 Задание 1</h3>
+                <h3>Задание 1</h3>
             </a>
             
-            <a href="https://ТВОЙ_НИК.github.io/zadaniye-2/" class="card" target="_blank" onclick="showBackLink()">
-                <h3>🎨 Задание 2</h3>
+            <a href="https://artyomstolyarenko.github.io/Task-2/" class="card" target="_blank" onclick="showBackLink()">
+                <h3>Задание 2</h3>
             </a>
             
             <a href="https://artyomstolyarenko.github.io/Task-3/" class="card" target="_blank" onclick="showBackLink()">
-                <h3>⚡ Задание 3</h3>
+                <h3>Задание 3</h3>
             </a>
             
             <a href="https://artyomstolyarenko.github.io/Final-task/" class="card" target="_blank" onclick="showBackLink()">
-                <h3>🔗 Финальное задание</h3>
+                <h3>Финальное задание</h3>
             </a>
         </div>
         
@@ -128,19 +128,5 @@
             Артём Столяренко • 2026
         </p>
     </div>
-
-    <script>
-        function showBackLink() {
-            document.getElementById('backLink').classList.add('show');
-            // Сохраняем информацию для новой вкладки
-            sessionStorage.setItem('showBack', 'true');
-        }
-        
-        // Показываем кнопку если перешли из меню (новая вкладка)
-        if (sessionStorage.getItem('showBack') === 'true') {
-            document.getElementById('backLink').classList.add('show');
-            sessionStorage.removeItem('showBack');
-        }
-    </script>
 </body>
 </html>
